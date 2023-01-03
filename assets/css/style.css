@@ -82,14 +82,27 @@ header .osahan-center-nav {
     padding: 0;
     background: #fff none repeat scroll 0 0;
     box-shadow: 2px 2px 5px rgb(91 94 222 / 16%);
+
 }
+
+.sticky-inner-wrapper, .sticky-outer-wrapper {
+    background-color: transparent;
+}
+
 .sticky-inner-wrapper .nav-link {
     font-size: 13px;
-    color: black;
+    color: white;
     padding: 10px!important;
     position: relative;
     letter-spacing: 0;
 }
+.active .nav-link {
+    color: black;
+}
+.active .navbar-light{
+    background-color: white;
+}
+
 
 ul {
     display: block;
@@ -107,15 +120,26 @@ ul {
    
 }
 
-.nav-link {
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.active .navbar-brand{
     color: black;
 }
+
+
 
 .sticky-inner-wrapper, .sticky-outer-wrapper {
     background-color: transparent;
 }
 .sticky-inner-wrapper {
-    padding: 22px 48px;
+    
     -webkit-transition: all .4s ease-in-out 0s;
     transition: all .4s ease-in-out 0s;
 }
@@ -634,13 +658,7 @@ img{
 .navbar{
     box-shadow: var(--box-shadow);
 }
-.navbar-nav .nav-link{
-    font-weight: 500;
-    color: var(--c-dark);
-}
-.navbar-nav .nav-link.active{
-    color: var(--c-brand);
-}
+
 /*btn*/
 
 .btn-brand {
@@ -670,4 +688,3 @@ img{
     padding: 4px 14px;
     text-transform: uppercase;
 }
-

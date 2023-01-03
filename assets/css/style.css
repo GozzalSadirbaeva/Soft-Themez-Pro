@@ -89,6 +89,12 @@ header .osahan-center-nav {
     background-color: transparent;
 }
 
+.sticky-inner-wrapper {
+    padding: 22px 48px;
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s;
+}
+
 .sticky-inner-wrapper .nav-link {
     font-size: 13px;
     color: white;
@@ -138,11 +144,7 @@ ul {
 .sticky-inner-wrapper, .sticky-outer-wrapper {
     background-color: transparent;
 }
-.sticky-inner-wrapper {
-    
-    -webkit-transition: all .4s ease-in-out 0s;
-    transition: all .4s ease-in-out 0s;
-}
+
 
 .active .menu-btn {
     background-color: #3f345f!important;
@@ -155,7 +157,7 @@ ul {
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
     color: #333;
     margin: 0 0 0 9px;
-    padding: 9px 18px!important;
+    padding: 8px 15px;
     z-index: 999;
 }
 
